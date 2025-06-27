@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ST. MARY'S MAT. SCHOOL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">ST. MARY'S SCHOOL</div>
+    <ul class="nav-links">
+      <li onclick="showSection('home')">Home</li>
+      <li onclick="showSection('gallery')">Gallery</li>
+      <li onclick="showSection('about')">About</li>
+      <li onclick="showSection('form')">Admission</li>
+    </ul>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="content-section">
+    <h2>Welcome to ST. MARY'S MATRICULATION SCHOOL</h2>
+    <img id="slide" src="https://via.placeholder.com/600x300?text=School+Photo+1" alt="Slideshow" />
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="content-section hidden">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="st.marys.jpg" alt="School Image 1">
+      <img src="stmarys1.jpg" alt="School Image 2">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="content-section hidden">
+    <h2>About the School</h2>
+    <p>
+      ST.MARY'S MAT.SCHOOL, TOLGATE was established in 1991. It is a co-educational school located in rural Trichy. The school has 35 teachers, 20 computers, 1800 books, and serves students from Class 1 to 10.
+    </p>
+  </section>
+
+  <!-- Admission -->
+  <section id="form" class="content-section hidden">
+    <h2>Admission Form</h2>
+    <form onsubmit="return validateForm()">
+      <label>Name: <input type="text" id="name" required></label><br>
+      <label>Age: <input type="number" id="age" required></label><br>
+      <label>Class Applying For:
+        <select id="classSelect" required>
+          <option value="">Select</option>
+          <option value="1">Class 1</option>
+          <option value="2">Class 2</option>
+          <option value="3">Class 3</option>
+        </select>
+      </label><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="resultMsg"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ST. MARY'S MAT. SCHOOL, TOLGATE. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

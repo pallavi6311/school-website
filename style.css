@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #005a87;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #ffd700;
+}
+
+/* Sections */
+.content-section {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 5px gray;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+form input, form select {
+  padding: 8px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+form button {
+  padding: 8px 15px;
+  background-color: #005a87;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #004060;
+}
+
+footer {
+  background-color: #005a87;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
